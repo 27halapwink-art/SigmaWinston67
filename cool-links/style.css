@@ -1,0 +1,67 @@
+a {
+    display: block;
+    text-align: center;
+    background-color: #73D2DE;
+    color: black;
+    padding: 20px;
+    font-size: 40px;
+    width: 25%;
+    margin-left: 37%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.wrapper {
+    text-align: center;
+}
+
+#google:hover {
+    background-color: #218380;
+    color: #D81159;
+}
+
+#google:active {
+    width: 30%;
+    background-color: #8F2D56;
+}
+
+#google:visited {
+    color: #FBB13C;
+}
+
+#wiki:hover { 
+    background-color: #218380;
+    color:#D81159
+}
+
+#wiki:active {
+ width: 30%;
+    background-color: #8F2D56;
+}
+
+#wiki:visited { 
+ color: #FBB13C;
+}
+
+#espn:hover {
+    background-color: #218380;
+    color:#D81159
+}
+
+#espn:active {
+ width: 30%;
+    background-color: #8F2D56;
+}
+
+#espn:visited { 
+ color: #FBB13C;
+}
+
+h1{
+    color: #686963
+}
+
+body{
+    background-color:#E3F2FD
+}
