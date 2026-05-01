@@ -1,0 +1,92 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3a0d5c;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;   
+  height: 500px;
+  background: url("images/Photoroom_20260501_120323.png") no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+
+#wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.nav {
+  margin-bottom: 25px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 1.1rem;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+.nav a:hover {
+  transform: translateY(-2px);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+.nav a:hover::after {
+  width: 100%;
+}
+
+.manga-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.manga-row img {
+  width: 100%;
+  max-width: 230px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.manga-row img:hover {
+  transform: scale(1.05);
+}
+
+.manga-row img:hover {
+  filter: brightness(0.9);
+}
