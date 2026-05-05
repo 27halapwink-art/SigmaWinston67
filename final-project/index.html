@@ -13,9 +13,9 @@
         <img id="Naruto" src="images/IMG_1158.jpeg">
         <br>
         <nav class="nav">
-            <a id="Home" href="index.html" target="_blank" >Home</a>
-            <a id="Contact" href="Contact.html" target="_blank">Contact</a>
-            <a id="Menu" href="Menu.html" target="_blank">Menu</a>
+            <a id="Home" href="index.html">Home </a>
+            <a id="Contact" href="Contact.html">Contact</a>
+            <a id="Menu" href="Menu.html">Menu</a>
         </nav>
         <br>
         <h2>What is our resturaunt?</h2>
@@ -67,9 +67,22 @@ Ichiraku Ramen is a small, family-run ramen stand founded by Teuchi in the Hidde
 <h2>Edit</h2>
 <br>
     <div class="video">
-    <video controls>
-        <source src="final-project/images/SnapTik-dot-Kim-0ff164e397130c10f339e81fa91e1163.mp4" type="video/mp4">
-    </video>
+<video id="myVideo" width="100%" autoplay muted loop controls playsinline>
+  <source src="images/SnapTik-dot-Kim-0ff164e397130c10f339e81fa91e1163.mp4" type="video/mp4">
+</video>
+<script>
+  const vid = document.getElementById("myVideo");
+  vid.load();
+  vid.play().catch(() => {});
+  function enableSound() {
+    vid.muted = false;
+    vid.volume = 1;
+    document.removeEventListener("click", enableSound);
+  }
+  document.addEventListener("click", enableSound);
+</script>
+
+
 </div>
 
 

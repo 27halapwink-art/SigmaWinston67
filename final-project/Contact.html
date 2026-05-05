@@ -3,6 +3,7 @@
   <title>Contact</title>
   <head>
     <link rel="stylesheet" href="contact style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
    
 
@@ -11,9 +12,9 @@
    <div id="wrapper">
         <h1>Contact</h1>
         <nav class="nav">
-            <a id="Home" href="index.html" target="_blank" >Home</a>
-            <a id="Contact" href="Contact.html" target="_blank">Contact</a>
-            <a id="Menu" href="Menu.html" target="_blank">Menu</a>
+            <a id="Home" href="index.html" >Home</a>
+            <a id="Contact" href="Contact.html">Contact</a>
+            <a id="Menu" href="Menu.html">Menu</a>
         </nav>
 </div>
 <br>
@@ -24,6 +25,41 @@
 <img src="images/manga3.jpg">
 </div>
 </div>
+<div>
+<div class="contact-container">
+  <h2>Contact Me</h2>
+  <div class="contact-card">
+    <p>📞 Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+    <p>📧 Email: <a href="mailto:SasukeUchiha@gmail.com">Sasuke@gmail.com</a></p>
+    <p>📍 Location: Hidden Leaf Village</p>
+  </div>
+</div>
+<br>
+<div class="gif-container">
+  <img src="images/757E01CF-725F-41E2-A57D-AB3993968DC3.gif" alt="Sasuke animation">
+</div>
+<br>
+<h2>Edit</h2>
+<br>
+<div>
+    <div class="video">
+<video id="myVideo" width="100%" autoplay muted loop controls playsinline>
+  <source src="images/SnapTik-dot-Kim-6964b4255bffcb61bfe8eba317091080.mp4" type="video/mp4">
+</video>
+<script>
+  const vid = document.getElementById("myVideo");
+  vid.load();
+  vid.play().catch(() => {});
+  function enableSound() {
+    vid.muted = false;
+    vid.volume = 1;
+    document.removeEventListener("click", enableSound);
+  }
+  document.addEventListener("click", enableSound);
+</script>
+</div>
+</div>
+
 
 
 

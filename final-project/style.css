@@ -182,9 +182,17 @@ transform: scale(1.05);
 }
 
 h2 {
-  font-family: 'NinjaNaruto', sans-serif;
-  color: #1C2A5A;
+  font-family: 'Russo One', sans-serif;
+  font-size: 2rem;
+  color: #4cc9f0; /* bright chakra blue */
+  text-shadow:
+    0 0 5px #4cc9f0,
+    0 0 10px #4895ef,
+    0 0 20px #4361ee,
+    0 0 30px #3a0ca3;
+  letter-spacing: 1.5px;
 }
+
  
 .video {
     display: flex;
