@@ -1,12 +1,113 @@
-<!DOCTYPE html>
-<html>
-
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichiraku Ramen Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="menu stylee.css">
+</head>
 <body>
-
-
-
-
-
+    
+    <div class="overlay"></div>
+    
+    <div id="wrapper">
+       
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Menu.html">Menu</a>
+        </nav>
+    
+        <header>
+            <h1>🍜 Ichiraku Ramen</h1>
+            <p class="subtitle">
+                ""Each of us lives, dependent and bound by our individual knowledge and awareness. All that is what we call reality. However, both knowledge and awareness are equivocal. One's reality might be another's illusion. We all live inside our own fantasies"
+            </p>
+        </header>
+        
+        <div class="content-layout">
+            
+            <div class="menu-section">
+               
+                <section class="menu-card">
+                    <h2>Ramen Bowls</h2>
+                    <div class="item">
+                        <div>
+                            <h3>Classic Miso Ramen</h3>
+                            <p>Rich miso broth, chashu pork, soft egg</p>
+                        </div>
+                        <span>$10</span>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <h3>Sharingan Spicy Ramen</h3>
+                            <p>Fiery broth with chili oil & garlic</p>
+                        </div>
+                        <span>$12</span>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <h3>Akatsuki Black Ramen</h3>
+                            <p>Black garlic oil, deep umami flavor</p>
+                        </div>
+                        <span>$13</span>
+                    </div>
+                </section>
+               
+                <section class="menu-card">
+                    <h2>Sides</h2>
+                    <div class="item">
+                        <div>
+                            <h3>Gyoza</h3>
+                            <p>Pan-fried dumplings</p>
+                        </div>
+                        <span>$6</span>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <h3>Itachi’s Rice Bowl</h3>
+                            <p>Steamed rice with grilled chicken</p>
+                        </div>
+                        <span>$7</span>
+                    </div>
+                </section>
+               
+                <section class="menu-card gif-section">
+                    <h2>Shinobi Energy</h2>
+                    <img src="images/0ED851AF-0311-42B1-AFDA-15A3884C7B06.gif" alt="Naruto GIF">
+                </section>
+            </div>
+            
+            <aside class="manga-panel">
+                <img src="images/Itachi1.jpg" alt="Itachi Manga">
+                <img src="images/Itachi2.jpg" alt="Itachi Manga">
+                <img src="images/Volume61.jpg" alt="Naruto Manga">
+            </aside>
+        </div>
+    </div>
+    <br>
+    <h2>Edit</h2>
+    <br>
+   <div>
+    <div class="video">
+<video id="myVideo" width="100%" autoplay muted loop controls playsinline>
+  <source src="images/SnapTik-dot-Kim-58f2254023602f2c344b6104fe05296c.mp4" type="video/mp4">
+</video>
+<script>
+  const vid = document.getElementById("myVideo");
+  vid.load();
+  vid.play().catch(() => {});
+  function enableSound() {
+    vid.muted = false;
+    vid.volume = 1;
+    document.removeEventListener("click", enableSound);
+  }
+  document.addEventListener("click", enableSound);
+</script>
+</div>
+</div>
 </body>
-
 </html>
+

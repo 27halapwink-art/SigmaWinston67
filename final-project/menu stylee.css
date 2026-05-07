@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #050505, #120000, #1a0000);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
+}
+
+#wrapper{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    transition: 0.3s;
+}
+.nav a:hover{
+    color: #ff2b2b;
+    text-shadow: 0 0 10px crimson;
+    transform: scale(1.1);
+}
+
+header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1{
+    font-size: 75px;
+    font-family: 'Great Vibes', cursive;
+    color: #d10000;
+    text-shadow:
+        0 0 10px #8b0000,
+        0 0 20px #ff0000,
+        0 0 40px #5c0000;
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker{
+    from{
+        opacity: 0.85;
+    }
+    to{
+        opacity: 1;
+        text-shadow:
+        0 0 15px #ff1a1a,
+        0 0 30px #8b0000,
+        0 0 55px crimson;
+    }
+}
+
+.subtitle{
+    width: 70%;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    color: #d3d3d3;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.content-layout{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.menu-section{
+    width: 65%;
+}
+
+.menu-card{
+    background: rgba(10,10,10,0.82);
+    border: 2px solid #8b0000;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 35px;
+    backdrop-filter: blur(5px);
+    box-shadow:
+        0 0 15px rgba(139,0,0,0.7),
+        0 0 30px rgba(80,0,0,0.5);
+    transition: 0.3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-3px);
+}
+
+.menu-card h2{
+    text-align: center;
+    font-size: 34px;
+    color: #ff4d4d;
+    margin-bottom: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 0 0 10px darkred;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.item:hover{
+    background: rgba(139,0,0,0.25);
+    border-radius: 12px;
+    transform: scale(1.02);
+}
+
+.item h3{
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.item p{
+    margin-top: 5px;
+    color: #cccccc;
+}
+
+.item span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.manga-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.manga-panel img{
+    width: 220px;
+    border-radius: 15px;
+    border: 3px solid #8b0000;
+    box-shadow:
+        0 0 10px #8b0000,
+        0 0 25px #300000;
+    transition: 0.4s;
+}
+
+.manga-panel img:hover{
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px red,
+        0 0 45px darkred;
+}
+
+.gif-section{
+    text-align: center;
+}
+
+.gif-section img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 18px;
+    border: 3px solid #8b0000;
+    box-shadow:
+        0 0 15px darkred,
+        0 0 35px crimson;
+}
+
+@media(max-width: 1000px){
+    .content-layout{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-section{
+        width: 100%;
+    }
+    .manga-panel{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .manga-panel img{
+        width: 170px;
+    }
+    header h1{
+        font-size: 55px;
+    }
+}
+
+.video{
+    margin-top: 30px;
+}
+.video video{
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid #8b0000;
+    background: black;
+    box-shadow:
+        0 0 12px #8b0000,
+        0 0 30px #300000;
+    transition: 0.4s;
+}
+.video video:hover{
+    transform: scale(1.01);
+    box-shadow:
+        0 0 20px red,
+        0 0 45px darkred;
+}
+
+
+ h2 {
+  display: grid;
+  place-items: center;
+  margin: 20px 0;
+}
