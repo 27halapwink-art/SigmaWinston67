@@ -208,28 +208,35 @@ header h1{
 }
 
 .video{
-    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
 }
 .video video{
     width: 100%;
-    border-radius: 20px;
+    display: block;
+    border-radius: 18px;
     border: 3px solid #8b0000;
     background: black;
     box-shadow:
-        0 0 12px #8b0000,
-        0 0 30px #300000;
+        0 0 15px darkred,
+        0 0 35px crimson;
     transition: 0.4s;
+    object-fit: cover;
 }
 .video video:hover{
-    transform: scale(1.01);
+    transform: scale(1.02);
     box-shadow:
         0 0 20px red,
         0 0 45px darkred;
 }
 
-
  h2 {
-  display: grid;
-  place-items: center;
-  margin: 20px 0;
+  text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    transition: 0.3s;
+    text-align: center;
 }
